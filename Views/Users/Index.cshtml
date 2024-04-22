@@ -48,6 +48,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.EnergyConsumption)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BigValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Value)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -89,6 +95,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.EnergyConsumption)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BigValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Value)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |

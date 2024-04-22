@@ -54,7 +54,7 @@ namespace AllPropertiesApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,Money,DateOfBirth,TimeOfBirth,FavouriteNumber,IsStudent,GenderChar,HeightInCentimeters,Years,HeightInMeters,EnergyConsumption")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Name,Email,Money,DateOfBirth,TimeOfBirth,FavouriteNumber,IsStudent,GenderChar,HeightInCentimeters,Years,HeightInMeters,EnergyConsumption,BigValue,Value")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace AllPropertiesApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Email,Money,DateOfBirth,TimeOfBirth,FavouriteNumber,IsStudent,GenderChar,HeightInCentimeters,Years,HeightInMeters,EnergyConsumption")] User user)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Email,Money,DateOfBirth,TimeOfBirth,FavouriteNumber,IsStudent,GenderChar,HeightInCentimeters,Years,HeightInMeters,EnergyConsumption,BigValue,Value")] User user)
         {
             if (id != user.Id)
             {
